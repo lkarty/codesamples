@@ -1,0 +1,224 @@
+/*
+EVENT DETAIL PAGE Styles
+*/
+//Hide Mastehad on detail page
+
+#tribe-events-pg-template {
+	padding: 0px 20px 20px;
+}
+
+.single #bt-main .bt-footer {
+	margin-top:70px;
+}
+
+@include media(768px){
+	#tribe-events-pg-template {
+		padding: 0;
+	}
+	.tb-event-signle.custom .tb-event-info .header-info .title {
+		font-size: 35px;
+  		margin: 40px 0;
+	}
+	
+	.single #bt-main .bt-footer {
+		margin-top:90px;
+	}
+	
+	.event-side-bar-wrapper {
+  		margin-bottom: 75px;
+	}
+}
+
+.single-tribe_events{
+  .bt-title-bar-wrap{
+    display: none;
+  }
+  .main-content{
+    margin-top: 60px;
+  }
+  .tribe-ticket-quantity,
+  .tickets_description {
+	  text-align:center;
+  }
+}
+.tb-events-back{
+  display: none;
+}
+
+.tb-event-signle.custom {
+  overflow: hidden;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .title {
+  font-family: "ApexNew Medium", Arial, sans-serif;
+  font-size: 35px;
+  color: #282828;
+  line-height: 1;
+  margin: 40px 0;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .title-button {
+  line-height: 35px;
+  margin: 40px 0;
+}
+
+.tb-event-signle.custom .tb-event-info {
+  margin-top: 40px;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info {
+  width: 100%;
+  padding: 0;
+  color: #555555;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-date {
+  color: #555555;
+  font-size: 12px;
+  padding-left: 0;
+}
+.tb-event-signle.custom .tb-event-info .header-info .tbbs-events-content,
+.tb-event-signle.custom .tb-event-info .header-info .title,
+.tb-event-signle.custom .tb-event-info .header-info .event-location,
+.tb-event-signle.custom .tb-event-info .header-info .event-category{
+  padding-left: 0;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-date::before {
+  content: "";
+  width: 14px;
+  height: 13px;
+  background: url('assets/images/time-red-icon.png');
+  display: inline-block;
+  margin-right: 5px;
+
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-location::before {
+  content: "";
+  width: 11px;
+  height: 16px;
+  background: url('assets/images/location-red-icon.png');
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-category label {
+  font-weight: 400;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-category a{
+  color: #be0b06;
+}
+
+.tb-event-signle.custom .tb-event-info .header-info .event-category::before {
+  content: "";
+  width: 13px;
+  height: 14px;
+  background: url('assets/images/tag-red-icon.png');
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tb-event-signle.custom #tbbs-events-nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav {
+  display: block;
+  overflow: hidden;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li {
+  max-width: 50%;
+  margin: 0;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li a{
+  color: #be0b06;
+  background: transparent;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li.tribe-events-nav-previous {
+  float: left;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li.tribe-events-nav-previous a span {
+  width: 5px;
+  height: 9px;
+  background: url('assets/images/prev-red-arrow.png');
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li.tribe-events-nav-next {
+  float: right;
+}
+
+.tb-event-signle.custom #tbbs-events-nav .tribe-events-sub-nav > li.tribe-events-nav-next a span {
+  width: 5px;
+  height: 9px;
+  background: url('assets/images/next-red-arrow.png');
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.event-side-bar-title {
+  font-family: "ApexNew Medium", Arial, sans-serif;
+  font-size: 24px;
+  padding: 20px 0 30px 0;
+}
+
+.event-side-bar-redline {
+  width: 20%;
+  height: 2px;
+  background: #be0b06;
+}
+
+.event-side-bar-wrapper {
+  margin-bottom: 35px;
+}
+
+.event-side-bar-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.event-side-bar-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-side-bar-header {
+  font-family: "ApexNew Medium", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.event-side-bar-body {
+  font-family: "ApexNew Book", Arial, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.2;
+  color: #555555;
+}
+
+.event-side-bar-link {
+  color: #be0b06;
+}
+
+.event-side-bar-link span {
+  width: 5px;
+  height: 9px;
+  background: url('assets/images/next-red-arrow.png');
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.tb-event-signle .tribe-events-event-meta {
+  display: none!important;
+}

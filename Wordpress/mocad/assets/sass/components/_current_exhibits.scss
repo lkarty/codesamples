@@ -1,0 +1,123 @@
+.page-template-mocad-current-exhibits, .page-template-mocad-upcoming-exhibits {
+	.first-exhibit {
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.content {
+			background: #fff;
+			width: 100%;
+			max-width: 580px;
+			max-height: 500px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			padding: 50px;
+			text-align: center;
+
+			a.btn {
+				margin-top: 0;
+			}
+		}
+	}
+
+	h2 {
+		font-family: "ApexNew Book", Arial, sans-serif;
+		font-size: 2.25rem!important;
+		color: #282828;
+		text-transform: uppercase;
+		line-height: 1;
+		margin-top: 30px;
+
+		&:before {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background: #be0b06;
+			display: block;
+			position: relative;
+			top: -30px;
+		}
+		&[style="text-align: center;"] {
+			&:before {
+				margin: 0 auto;
+			}
+		}
+		strong {
+			font-family: "ApexNew Bold", Arial, sans-serif;
+			color: #282828;
+			font-weight: normal;
+		}
+	}
+
+	h4 {
+		line-height: 1;
+		font-family: "ApexNew Medium", Arial, sans-serif;
+		font-size: 1.75rem!important;
+
+		&:before {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background: #be0b06;
+			display: block;
+			position: relative;
+			top: -30px;
+		}
+		&[style="text-align: center;"] {
+			&:before {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	p {
+		span {
+			color: #be0b06;
+		}
+	}
+
+	a.btn {
+		margin-top: 30px;
+	}
+
+	.vc_col-sm-6 {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		padding: 0 20px;
+	}
+}
+
+@include media('768px'){
+	.page-template-mocad-current-exhibits, .page-template-mocad-upcoming-exhibits{
+		h2{
+			font-size: 3.25rem!important;
+		}
+		h4{
+			font-size: 2.75rem!important;
+		}
+	}
+}
+
+@include media('992px'){
+	.page-template-mocad-current-exhibits, .page-template-mocad-upcoming-exhibits{
+		h2{
+			font-size: 45px!important;
+		}
+		h3{
+			font-size: 35px!important;
+		}
+	}
+}

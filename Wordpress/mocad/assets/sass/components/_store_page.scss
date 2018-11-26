@@ -1,0 +1,10 @@
+.woocommerce.tb-products-grid.tpl2 .product .bt-thumb {
+    height: 250px;
+	overflow: hidden;
+}
+.woocommerce.tb-products-grid.tpl2 .product .bt-thumb > a > img {
+    max-height:100%;
+	max-width: 100%;
+	object-fit: cover;
+	margin: auto;
+}

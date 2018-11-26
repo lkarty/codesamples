@@ -1,0 +1,479 @@
+.btn-danger,  .btn-danger:hover, .btn-danger:focus {
+    background: #be0b06!important;
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 30px!important;
+    line-height: 1!important;
+}
+
+/*
+Support page styles
+*/
+
+.support-page .wpb_raw_code.wpb_content_element {
+	margin-bottom:0!important;
+}
+
+.support-redline {
+    width: 50px;
+    height: 2px;
+    background: #be0b06;
+}
+
+.support-title h4 {
+    font-family: "ApexNew Medium", Arial, sans-serif;
+    margin: 20px 0 50px 0;
+    text-transform: uppercase;
+    font-size: 1.75rem!important;
+    line-height: 1;
+}
+
+.support-wrapper {
+    // margin-bottom: 104px;
+}
+
+.support-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.support-info ul {
+    padding-left: 30px;
+}
+
+.support-info ul li {
+    
+    list-style: disc;
+
+}
+
+.support-accordion-title {
+    width: 100%;
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 20px;
+    color: #282828;
+    overflow: hidden;
+    padding: 15px 0;
+    border-top: 1px solid #dedede;
+    cursor: pointer;
+    position: relative;
+}
+
+.support-accordion:last-child {
+    border-bottom: 1px solid #dedede;
+}
+
+.support-accordion-title > span {
+    line-height: 63px;
+    display: inline-block;
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.support-accordion-body {
+    display: none;
+}
+
+.support-accordion-body.open {
+    display: block;
+}
+
+.support-accordion-title-additional {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 25px;
+}
+
+.support-accordion-title-additional .price {
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.support-accordion-title-additional .tax {
+     font-family: "ApexNew Book", Arial, sans-serif;
+     font-size: 12px;
+     color: #7f7f7f;
+}
+
+.support-accordion-arrow {
+    width: 17px;
+    height: 12px;
+    background: url(assets/images/down-red-arrow.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    transform: translateY(-50%);
+}
+
+.support-accordion-arrow.up {
+    background: url(assets/images/up-red-arrow.png) no-repeat;
+}
+
+.support-accordion-benefits {
+    padding-top: 40px;
+}
+
+
+.support-accordion-benefits > span {
+    font-size: 15px;
+    color: #be0b06;
+    cursor: pointer;
+}
+
+.support-accordion-benefits > span:after {
+    content: '';
+    width: 17px;
+    height: 12px;
+    background: url(assets/images/down-red-arrow.png) no-repeat;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.support-accordion-benefits > span.open:after {
+    background: url(assets/images/up-red-arrow.png) no-repeat;
+}
+
+.support-accordion-benefits-body {
+    display: none;
+}
+
+.support-accordion-benefits-body.open {
+    display: block;
+}
+
+.support-accordion-actions {
+    padding: 40px 0;
+    a.btn.btn-danger {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        min-width: 100px;
+    }
+}
+
+.support-gray {
+    background: #e9e9e9;
+
+    .support-info-title-additional {
+        margin-right: 0;
+    }
+
+    .support-accordion-actions {
+        padding: 0;
+        margin-top: 50px;
+
+        a.btn.btn-danger {
+            display: block;
+            width: 100%;
+            margin-bottom: 25px;
+            min-width: 100px;
+        }
+    }
+
+    .col-md-10 {
+        padding: 0 40px 0 0;
+
+        ul {
+            padding-left: 15px;
+        }
+    }
+}
+
+.support-info-title {
+    width: 100%;
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 20px;
+    color: #282828;
+    overflow: hidden;
+    padding: 15px 0;
+    position: relative;
+}
+
+.support-info-title > span {
+    display: inline-block;
+    font-family: "ApexNew Bold", Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.support-info-title-additional {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-right: 25px;
+
+    & .price {
+        font-family: "ApexNew Bold", Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    & .tax {
+        font-family: "ApexNew Book", Arial, sans-serif;
+        font-size: 12px;
+        color: #7f7f7f;
+    }
+}
+
+
+.support-page section {
+    padding-top: 100px;
+
+    &.support-gray {
+        padding-top: 90px;
+    }
+}
+
+.wpb_raw_html:last-child {
+    section {
+        padding-top: 0;
+    }
+}
+
+.support-page section.member {
+    padding-top: 0;
+}
+
+.donate-widget {
+    overflow: hidden;
+    padding-left: 0!important;
+    padding-right: 0!important;
+
+    img {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+    }
+
+    &__info {
+        width: 80%;
+        max-width: 400px;
+        max-height: 100%;
+        min-height: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        background: #fff;
+        padding: 50px 40px;
+        text-align: center;
+    }
+
+    &__body {
+        font-family: "ApexNew Book", Arial, sans-serif;
+        font-size: 15px;
+        color: #555555;
+        margin-top: 25px;
+
+        &.big {
+            font-size: 26px;
+        }
+    }
+
+    &__title {
+        font-family: "ApexNew Medium", Arial, sans-serif;
+        color: #303030;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-top: 20px;
+
+        & span {
+            font-family: "ApexNew Medium", Arial, sans-serif;
+            color: #be0b06;
+            text-transform: uppercase;
+        }
+    }
+
+    &__actions {
+        margin-top: 40px;
+    }
+
+    &__red-line {
+        width: 50px;
+        height: 2px;
+        background: #be0b06;
+        margin: 0 auto;
+    }
+}
+
+.support-center {
+    text-align: center;
+
+    &__title {
+        font-family: "ApexNew Medium", Arial, sans-serif;
+        font-size: 35px;
+        color: #282828;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 0 20px;
+    }
+
+    &__red-line {
+        width: 50px;
+        height: 2px;
+        background: #be0b06;
+        margin: 0 auto 25px auto;
+    }
+
+    &__body {
+        font-family: "ApexNew Book", Arial, sans-serif;
+
+        a {
+            font-family: "ApexNew Medium", Arial, sans-serif;
+            color: #be0b06;
+        }
+    }
+}
+
+.support-header {
+    position: relative;
+    h4 {
+        font-size: 1.75rem!important;
+        line-height: 1;
+
+        &:before {
+            content: "";
+            width: 50px;
+            height: 2px;
+            background: #be0b06;
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.donation-progress {
+    padding: 90px 0;
+    &__donation {
+        margin-bottom: 50px;
+        
+    }
+
+    &__header {
+        h4 {
+            font-family: "ApexNew Medium", Arial, sans-serif;
+            font-size: 1.75rem!important;
+            color: #282828;
+            line-height: 1;
+            text-align: center;
+        }
+
+        p {
+            font-family: "ApexNew Book", Arial, sans-serif;
+            font-size: 15px;
+            color: #555555;
+            text-align: center;
+        }
+        
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__bar {
+        width: 100%;
+        height: 10px;
+        background: #e4e3e3;
+        position: relative;
+        
+        .progress {
+            height: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #be0b06;
+            border-radius: 0;
+        }
+    }
+
+    &__info {
+        font-family: "ApexNew Medium", Arial, sans-serif;
+        font-size: 15px;
+        color: #282828;
+        padding: 25px 0;
+        border-bottom: 1px solid #e4e3e3;
+
+        span {
+            font-family: "ApexNew Medium", Arial, sans-serif;
+        font-size: 15px;
+            color: #be0b06;
+
+            &.percentage {
+                float: right;
+            }
+        }
+    }
+
+    &__title {
+        font-family: "ApexNew Medium", Arial, sans-serif;
+        font-size: 20px;
+        color: #282828;
+        text-transform: uppercase;
+        padding: 25px 0;
+    }
+
+    &__content {
+        font-family: "ApexNew Book", Arial, sans-serif;
+        font-size: 15px;
+        color: #555555;
+        margin-bottom: 25px;
+    }
+
+
+}
+  
+@include media(768px){
+    .support-accordion-actions {
+        a.btn.btn-danger {
+            display: inline-block;
+            width: auto;
+        }
+    }
+    .support-title h4, 
+    .support-header h4,
+    .donation-progress &__header h4{font-size: 2.75rem!important;}
+
+}
+
+@include media(992px){
+    .support-title h4, 
+    .support-header h4,
+    .donation-progress &__header h4{font-size: 35px!important;}
+}
+
+@include media(1200px) {
+    .donation-progress {
+        &__donation {
+            margin-bottom: 0;
+        }
+    }
+
+    .support-info-title > span {
+        font-size: 20px;
+    }
+
+    .support-accordion-title > span {
+        font-size: 20px;
+    }
+    
+    .support-gray {
+        .support-accordion-actions {
+            margin-top: 0;
+        }
+    }
+
+}

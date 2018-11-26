@@ -1,0 +1,137 @@
+.searchandfilter ul {
+	margin-top: -60px;
+	padding-bottom: 25px;
+	
+	li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 10px 10px 0;
+	margin: 0 12px 0 0;
+	font-family: 'ApexNew Book', Arial, sans-serif;
+		h4{
+			font-family: 'ApexNew Book', Arial, sans-serif;
+			font-size: 1.75rem!important;
+			color: #555555;
+			padding: 0 0 10px 0;
+		}
+		.sf-input-text, .sf-input-select{
+			background-color: #e4e4e4;
+			max-height: 45px;
+			color: #383636;
+		}
+		input[type="submit"]{
+			background-color: #be0b06;
+			border-radius: 6px;
+			padding: 8px 21px;
+		}
+		.search-filter-reset{
+			border: 2px solid #be0b06;
+			background-color: transparent;
+			border-radius: 6px;
+			display: inline-block!important;
+			padding: 8px 25px!important;
+		}
+	}
+}
+
+.filter-container {
+	padding: 0 15px;
+}
+
+.container.section.results p {
+	margin-bottom:0;
+}
+
+.spacer{
+	margin-bottom: 42px;
+}
+
+.results{
+	font-size: 12px;
+	color: #555555;
+	h3{
+		font-size: 2rem!important;
+		a{
+			color: #282828;
+		}
+	}
+	.red{
+		color: #be0b06;
+	}
+	.frame {
+	    width: 355px;
+	    height: 244px;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+}
+
+.custom-pagination {
+		text-align: center;
+		margin-bottom: 90px;
+
+		a {
+			font-size: 15px;
+			padding: 7px 15px;
+			background: #ededed;
+			color: #323232;
+			display: inline-block;
+			border-radius: 4px;
+			margin-right: 5px;
+
+			&:last-child{margin-right: 0;}
+
+			&:hover, &.active, &.current {
+				background: #be0b06;
+				color: #fff;
+			}
+		}
+	}
+	
+.pagination{
+	width: 100%;
+	text-align: center;
+	div{
+		display: inline-block;
+	}
+	.page{
+		font-family: 'ApexNew Book', Arial, sans-serif;
+		padding: 24px;
+		border-radius: 10px;
+		margin: 5px;
+		background-color: #ededed;
+	}
+}
+
+.search-filter-results .vc_col-sm-4 {
+	margin-bottom:25px;
+}
+
+@include media('480px'){
+	.custom-pagination a {
+    	padding: 10px 20px;
+	}
+}
+
+@include media('768px'){
+	.searchandfilter{
+		h4{font-size: 2.75rem!important;}
+	}
+	.results{
+		h3{font-size: 3rem!important;}
+	}
+	
+	.search-filter-results .vc_col-sm-4 {
+		margin-bottom:0;
+	}
+}
+
+@include media('992px'){
+	.searchandfilter{
+		h4{font-size: 15px!important;}
+	}
+	.results{
+		h3{font-size: 25px!important;}
+	}
+}

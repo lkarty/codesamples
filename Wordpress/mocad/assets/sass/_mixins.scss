@@ -1,0 +1,181 @@
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+@mixin media($size, $orientation:"") {
+  $orientation_text: get_orientation_text($orientation);
+  @if $size==sm {
+    @media screen and (min-width: $screen-sm-min) #{$orientation_text} {
+      @content;
+    }
+  }
+  @else if $size==md {
+    @media screen and (min-width: $screen-md-min) #{$orientation_text} {
+      @content;
+    }
+  }
+  @else if $size==lg {
+    @media  screen and (min-width: $screen-lg-min) #{$orientation_text} {
+      @content;
+    }
+  }
+  @else if $size==xlg {
+    @media  screen and (min-width: $screen-xlg-min) #{$orientation_text} {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: $size) #{$orientation_text} {
+      @content;
+    }
+  }
+}
+
+// 1st argument = breakpoint value
+// 2nd argument (optional) = either 2nd breakpoint value or the word max to make it a max-width query
+@mixin respond-to($val, $val2: none) {
+    @if ($val2 == none) {
+      @media (min-width: $val) { @content; }
+
+    } @else if ($val2 == max) {
+      @media (max-width: $val) { @content; }
+
+    } @else {
+      @media (min-width: $val) and (max-width: $val2) { @content; }
+    }
+}
+
+@function get_orientation_text($orientation:"") {
+  $orientation_text: "";
+  @if $orientation !="" {
+    $orientation_text: "and (orientation: " + $orientation")"
+  }
+  @return $orientation_text;
+}
+
+@function rem($px, $context: 10) {
+  @return ($px / $context) * 1rem;
+}
+
+@function em($px, $context: 16) {
+  @return ($px / $context) * 1em;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin ellipsis($lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin delay-children-animations($from, $to,$time, $delay){
+  @for $i from $from to $to {
+    &:nth-child(#{$i}) { transition:opacity $time $i * $delay ease-in-out; }
+  }
+}
+
+@function fluid-percentage ($parent, $element) {
+  @if unitless($element) {
+    $element: $element * 1px;
+  }
+  @if unitless($parent) {
+    $parent: $parent * 1px;
+  }
+  @return ($element * 100 / $parent) + '%';
+}
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew ($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin ($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+//Smooth Font Text
+@mixin smooth-text () {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

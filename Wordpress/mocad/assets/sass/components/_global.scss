@@ -1,0 +1,316 @@
+strong {
+	 font-family: "ApexNew Bold", Arial, sans-serif;
+}
+
+.footer-indent {
+	display:inline-block;
+	margin:0 0 0 5px;
+	vertical-align: middle;
+}
+
+#bt_footer.bt-footer .bt-footer-top .widget ul.tb-info-list > li > span {
+	background: #be0b06;
+}
+
+#mocad-hompage-slider {
+	.carousel-inner {
+		.nopadding {
+			max-height: 264px;
+		}
+	    img {
+	    	width: 100%;
+    		height: auto;
+	    }
+	    .embed-responsive {
+	    	height: 264px;
+	    	video{
+	    		height: 264px;
+    			width: auto;
+	    	}
+	    	iframe{
+	    		height: 264px;
+	    	}
+	    }
+	    .embed-responsive.embed-responsive-16by9{padding-bottom: 0!important;}
+	}
+}
+
+.event-side-bar-image {
+	img{
+		max-width: 335px!important;
+    	height: 164px!important;
+    	margin: 0 auto;
+    	display: block;
+	}
+}
+
+//Exhibition pagination bottom
+.exhibitions-slider-container{
+	.prev, .next{
+		a{
+			.text{
+				.arrow-text{
+					font-family: "ApexNew Bold", Arial, sans-serif;
+				    font-size: 12px;
+				    line-height: normal;
+				}
+			}
+		}
+	}
+}
+
+.tb-event-signle .tribe-events-event-image img{
+    max-height: 346px;
+}
+
+//About page
+.wpb_content_element.wpb_single_image.vc_align_left,
+.wpb_content_element.wpb_single_image.vc_align_right {
+    text-align: center !important;
+}
+
+@include media(768px){
+	#mocad-hompage-slider {
+		.carousel-inner{
+			.nopadding {
+				max-height: 322px;
+			}
+		    img {height: auto}
+		    .embed-responsive {
+		    	height: 322px;
+		    	iframe,video{height: 322px;}
+		    }
+		}
+	}
+
+	.event-side-bar-image {
+		img{
+	    	height: 244px!important;
+		}
+	}
+
+	.global-nav .exhibit-content .slick-slide img{
+		height: 163px!important;
+	}
+
+	.global-nav .nav-slider .slick-next, .global-nav .nav-slider .slick-prev{
+		left: 98%;
+	}
+
+	//Exhibition pagination bottom
+	.exhibitions-slider-container{
+		>.container{width: 780px;}
+		.prev, .next{
+			width: 360px;
+			height: 139px;
+			overflow: hidden;
+			a{
+				&>img{
+					height: 139px;
+					width: 50%;
+				    position: absolute;
+				    display: block;
+				}
+				.text{
+					top:0;
+					.arrow-exhibit{
+						z-index: 1;
+					    display: block;
+					    position: relative;
+					    top: 50px
+					}
+					.arrow-text{
+						font-family: "ApexNew Bold", Arial, sans-serif;
+					    font-size: 15px;
+					    color: #be0b06;
+					    text-shadow: initial;
+						background: #e0e0e2;
+					    width: 50%;
+					    position: absolute;
+					    right: 0;
+					    top: 0;
+					    height: 138px;
+					    padding-top: 56px;
+					}
+				}
+			}
+		}
+		.prev{
+			&+div{display: none;}
+			a{
+				&>img{left: 0;}
+				.text{
+					.arrow-text{right: 0;}
+				}
+			}
+		}
+		.next{
+			a{
+				&>img{right: 0;}
+				.text{
+					.arrow-text{left: 0;}
+				}
+			}
+		}
+	} 
+
+	.tb-event-signle .tribe-events-event-image img{
+		width: 690px;
+	    height: 343px;
+	    max-height: 100%;
+	}
+	.attachment-bearstheme_custom_blog_single_size.size-bearstheme_custom_blog_single_size.wp-post-image {
+		height: 100% !important;
+	}
+
+	//About page
+	.wpb_content_element.wpb_single_image.vc_align_left {
+	    text-align: left !important;
+	}
+	.wpb_content_element.wpb_single_image.vc_align_right {
+	    text-align: right !important;
+	}
+}
+
+@include media(992px){
+	.event-side-bar-image {
+		img{
+	    	height: 194px!important;
+		}
+	}
+
+	.global-nav .exhibit-content .slick-slide img{
+		width: 270px;
+	}
+
+	.global-nav .nav-slider .slick-next, .global-nav .nav-slider .slick-prev{
+		left: 96%;
+	}
+
+
+	//Exhibition pagination bottom
+	.exhibitions-slider-container{
+		>.container{width: 800px;}
+		.prev, .next{
+			width: 370px;
+			a{
+				&>img{
+					height: 139px;
+					width: 50%;
+				    position: absolute;
+				    display: block;
+				}
+				.text{
+					top:0;
+					.arrow-exhibit{
+						z-index: 1;
+					    display: block;
+					    position: relative;
+					    top: 50px
+					}
+					.arrow-text{
+						font-family: "ApexNew Bold", Arial, sans-serif;
+					    font-size: 15px;
+					    color: #be0b06;
+					    text-shadow: initial;
+					    line-height: normal;
+						background: #e0e0e2;
+					    width: 50%;
+					    position: absolute;
+					    right: 0;
+					    top: 0;
+					    height: 138px;
+					    padding-top: 56px;
+					}
+				}
+			}
+		}
+		.prev{
+			&+div{display: none;}
+			a{
+				&>img{left: 0;}
+				.text{
+					.arrow-text{right: 0;}
+				}
+			}
+		}
+		.next{
+			a{
+				&>img{right: 0;}
+				.text{
+					.arrow-text{left: 0;}
+				}
+			}
+		}
+	}
+
+	.tb-event-signle .tribe-events-event-image img{
+		width: 596px;
+	    height: 300px;
+	}
+	.attachment-bearstheme_custom_blog_single_size.size-bearstheme_custom_blog_single_size.wp-post-image {
+		height: 100% !important;
+	}
+}
+
+@include media(1200px){
+	.event-side-bar-image {
+		img{
+	    	height: 194px!important;
+		}
+	}
+
+	.global-nav .nav-slider .slick-next, .global-nav .nav-slider .slick-prev{
+		left: 78%;
+	}
+
+	.tb-event-signle .tribe-events-event-image img{
+		width: 771px;
+	    height: 432px;
+	}
+	.attachment-bearstheme_custom_blog_single_size.size-bearstheme_custom_blog_single_size.wp-post-image {
+		height: 100% !important;
+	}
+}
+
+@include media(1300px){
+	#mocad-hompage-slider {
+		.carousel-inner{
+			.nopadding {
+				max-height: 543px;
+			}
+		    .embed-responsive {
+		    	max-height: 543px;
+		    	iframe,video{max-height: 543px;}
+		    	video{
+		    		max-height: 543px;
+		    		width: auto;
+    				background: black;
+		    	}
+		    }
+		}
+	}
+}
+
+p:not(.artist) {
+    letter-spacing: 0px !important;
+    line-height: 21px !important;
+}
+
+//for mobile homestead
+
+@media screen and (min-width: 1200px) {
+ .vc_row .container .vc_column_container.vc_col-sm-6 {
+    vertical-align: top !important;
+ }
+}
+
+@include media(1200px) {
+	.page-template-mocad-exhibition-detail  .main-content {
+		margin-top: 40px;
+	}
+}
+
+.bt-footer-top {
+	position: relative;
+}

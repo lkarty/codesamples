@@ -1,0 +1,139 @@
+.event-listing-become .widget_text.row{
+		margin-bottom:100px;
+	}
+	
+.event-side-bar-image {
+	margin-bottom:15px;
+}
+
+.event-side-bar-wrapper .spacer {
+	margin: 10px 0 0 0;
+}
+	
+.event-side-bar-info .event-category::before {
+    content: "";
+    width: 13px;
+    height: 14px;
+    background: url("assets/images/tag-red-icon.png");
+    display: inline-block;
+    margin-right: 10px;
+}	
+
+.event-side-bar-info .event-date::before {
+    content: "";
+    width: 14px;
+    height: 13px;
+    background: url("assets/images/time-red-icon.png");
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.event-side-bar-info .event-location::before {
+    content: "";
+    width: 11px;
+    height: 16px;
+    background: url("assets/images/location-red-icon.png");
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.event-listing-page {
+	
+	.event-date::before {
+	  content: "";
+	  width: 14px;
+	  height: 13px;
+	  background: url('assets/images/time-red-icon.png');
+	  display: inline-block;
+	  margin-right: 10px;
+
+	}
+
+	.no-padding {
+		padding: 0!important;
+	}
+
+	.event-location::before {
+	  content: "";
+	  width: 11px;
+	  height: 16px;
+	  background: url('assets/images/location-red-icon.png');
+	  display: inline-block;
+	  margin-right: 10px;
+	}
+
+	.event-category::before {
+	  content: "";
+	  width: 13px;
+	  height: 14px;
+	  background: url('assets/images/tag-red-icon.png');
+	  display: inline-block;
+	  margin-right: 10px;
+	}
+
+	.event-category a{
+	  color: #be0b06;
+	}
+
+	.event-side-bar-info {
+		padding: 25px 0;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #e4e3e3;
+		overflow: hidden;
+		font-family: "ApexNew Book", Arial, sans-serif;
+		font-size: 12px;
+	}
+
+	.event-listing-content {
+		margin: 90px 0;
+	}
+
+	h4 {
+		font-size: 1.75rem!important;
+		margin-top: 30px;
+		line-height: 1;
+
+		&:before {
+			content: "";
+			width: 50px;
+			height: 2px;
+			background: #be0b06;
+			display: block;
+			position: relative;
+			top: -30px;
+		}
+	}
+
+	
+}
+
+@include media('768px'){
+	.event-listing-page{
+		h4{
+			font-size: 2.75rem!important;
+		}
+		.vc_row {
+			.container {
+				display: table;
+				margin-bottom: 80px;
+
+				.vc_column_container {
+					display: table-cell;
+					vertical-align: middle;
+					float: none;
+				}
+			}
+		}
+
+		
+	}
+	.image-container-responsive-swap{display: table-cell;}
+}
+
+@include media('992px'){
+	.event-listing-page{
+		h4{
+			font-size: 35px!important;
+		}
+	}
+}

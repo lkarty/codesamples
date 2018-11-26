@@ -1,0 +1,19 @@
+a:link {
+    color:#8ab635;
+}
+a:visited {
+    color:#8ab635;
+}
+a:active,
+a:hover {
+    color: #a1c540;
+}
+
+.white {
+	color:#fff;
+}
+
+.yellow {color:#f4b936;}
+.pink{color:#fb5bd3;}
+
+.purple{color:#300024;}

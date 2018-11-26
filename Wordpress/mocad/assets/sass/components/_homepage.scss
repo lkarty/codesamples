@@ -1,0 +1,680 @@
+.no-padding-image-mobile > div.vc_column-inner,
+.home-page-cta-collage > div.container > div.vc_col-sm-6 > div.vc_column-inner{
+	padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.home-page-cta-collage > div.container {
+	display: block!important;
+	margin-left: 30px!important;
+    margin-right: 30px!important;
+}
+
+@media only screen and (min-width: 320px) 
+  and (max-width: 1199px){
+    .collage-frame-container > div.container{display:block!important;}
+
+	.recent-supporters .frame {
+	    margin-right: 0!important;
+		width: 47% !important;
+		float: left!important;
+	}
+
+	.recent-supporters .frame:nth-child(odd) {
+	    margin-right: 6%!important;
+	}
+
+	.recent-supporters .frame.small.full-right {
+	    margin-left: 0!important;
+	}
+
+	.recent-supporters .frame.small.last {
+	    margin-left: 0!important;
+	}
+}
+
+@media only screen and (min-width: 768px) 
+  and (max-width: 1199px){
+	.recent-supporters {
+	    width: 95%;
+    	margin: 0 auto;
+	}
+}
+
+
+html body .bt-events-special > article .bt-event-item .bt-info .bt-location {
+    color: #be0b06;
+}
+
+html body .bt-events-special > article .bt-event-item .bt-start-date .date:before {
+    border: 0;
+}
+
+html body .bt-events-special > article .bt-event-item .bt-info .bt-location:after{
+	background: transparent;
+}
+
+html body h3.bt-title{
+	background: transparent;
+}
+ 
+html body .vc_row .vc_inner .mocad-mission.vc_col-has-fill > .vc_column-inner{
+    padding: 50px 42px 0 42px !important;
+}
+
+html body .bt-title-bar-wrap .bt-title-bar h2{
+	font-size: 2.25rem!important;
+}
+
+.mocad-button .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern{
+	font-family: "ApexNew Bold"!important;
+}
+
+.mocad-mission.vc_col-has-fill table {
+	margin-bottom:0;
+}
+
+.mocad-mission.vc_col-has-fill table td{
+	padding-bottom:0;
+}
+
+.mocad-mission{
+	 margin-top: -70px;
+	 margin-bottom: 20px;
+	.wpb_wrapper p{
+		font-size:14px;
+		line-height:22px;
+	
+	}
+	table{
+		padding-top: 30px;
+		color: #fff;
+		font-size: 12px;
+		font-family: "ApexNew Book", Arial, sans-serif;
+		border: 0;
+		line-height: 15px;
+		span{
+			font-family: "ApexNew Medium", Arial, sans-serif;
+		}
+		td{
+			border: 0;
+			padding: 10px 0 0 0;
+		}
+		.icon-indent p{
+			padding-left: 25px;
+		}
+		i{
+			text-indent: -25px;
+		}
+		.fa-mobile:before {
+			position: relative;
+    		top: 4px;
+		}
+		.fa-map-marker:before  {
+			position: relative;
+    		top: 15px;
+    		left: -2px;
+		}
+	}
+}
+
+.mocad-support{
+	h3{
+		padding: 0;
+		background: transparent;
+		margin-bottom: 32px!important;
+	}
+	p {
+	    margin-bottom: 5px;
+	}
+	.wpb_wrapper{
+		background-color: #e9e9e9;
+	}
+	&>.vc_column-inner {
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
+	.vc_custom_1470922499637{
+		padding-top: 62px !important;
+		p{
+			text-transform: uppercase!important;
+			font-weight: bold!important;
+		}
+	}
+
+	.mocad-button-container{
+		padding-bottom: 70px;
+		&>.vc_column-inner {
+		    padding-left: 15px !important;
+		}
+	}
+
+	.vc_custom_1470922575935{
+		p{display: none!important;}
+	}
+
+	.mocad-button.member-home{
+		display: table!important;
+		margin: 0 auto!important;
+		a{
+			font-family: "ApexNew Bold", Arial, sans-serif!important; 
+	    }
+	}
+}
+
+a.half-size:hover, a.full-size:hover{
+	.mocad-image-link.half-size,
+	.mocad-image-link.full-size {
+	    position: relative;
+
+	    &:before {
+		    content: "";
+		    background: black;
+		    opacity: 0.2;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    position: absolute;
+		    z-index: 9;
+		}
+
+	    .text-box{
+			position: relative;
+			z-index: 9;
+		}
+	}
+}
+
+.mocad-image-link.half-size,
+.mocad-image-link.full-size{
+	background-size: cover!important;
+	max-width: 100%!important;
+}
+
+.vc_row .container {
+    display: table!important;
+    margin-bottom: 35px!important;
+}
+
+.vc_row .no-container {
+	margin-bottom: 35px;
+	overflow:hidden;
+}
+.home-page-cta-collage .container {
+	margin-bottom: 35px;
+}
+
+.no-margin.vc_row .no-container {
+	margin-bottom: 0px!important;
+}
+
+.home-page-cta-collage .container {
+	margin-bottom:75px!important;
+}
+
+.mission-support-container> .container{
+	padding-left: 0;
+    padding-right: 0;
+    display: block!important;
+}
+
+// Revolution slider styles
+#rev_slider_8_1_wrapper{
+	.tparrows{
+		background: none!important;
+		&:before{
+			color: #b4afa6!important;
+			font-size: 22px;
+		}
+	}
+	.tp-bullets{
+		height: 7px; //dynamic via js
+		div{
+			top: 9px!important; //dynamic via js
+			&:nth-child(2){left:10px;} //dynamic via js
+		}
+		.tp-bullet{
+			background: #fff!important;
+			width: 7px; //dynamic via js
+    		height: 7px; //dynamic via js
+			&.selected{background: #c10708!important;}
+		}
+	}
+}
+// Event slider
+.bt-events-special{
+	.bt-info{
+		min-height: 140px;
+		a{
+		    width: 100%;
+		    display: block;
+		    position: absolute;
+		    left: 0px;
+		    bottom: -100%;
+		    z-index: 1;
+		    height: 100%;
+		    top: 0px;
+		}
+		h3.bt-title{
+			z-index: 2;
+		    position: relative;
+		    a{font-size: 24px!important;}
+		}
+	}
+
+	&> article{
+		.bt-event-item{
+			.bt-start-date{
+				opacity: 1!important;
+			}
+		}
+	}
+}
+
+@include media(768px) {
+
+	.no-padding-image-mobile > div.vc_column-inner,
+	.home-page-cta-collage > div.container > div.vc_col-sm-6 > div.vc_column-inner{
+		padding-left: 15px!important;
+	    padding-right: 15px!important;
+	}
+
+	.home-page-cta-collage > div.container {
+		display: table!important;
+		margin-left: auto!important;
+	    margin-right: auto!important; 
+	}
+	
+	html body .bt-title-bar-wrap .bt-title-bar h2{
+    	font-size: 3.25rem!important;
+    	padding: 50px;
+    	line-height: 42px;
+	}
+	
+	.attachment-file { 
+		margin-bottom: 50px!important;
+	}
+	
+	.mission-support-container> .container{
+		padding-right: 15px;
+    	padding-left: 15px;
+	    display: table;
+	    margin-bottom: 100px;
+	}
+
+	.mocad-image-link.half-size,
+	.mocad-image-link.full-size{
+		background-size: auto!important;
+    	max-width: 570px!important;
+	}
+
+	.mocad-mission{
+		margin-top: -225px;
+		margin-bottom: 0;
+		width: 100%!important;
+		float: right!important;
+	}
+	.mocad-support{
+		vertical-align: top!important;
+    	margin-top: -50px;
+    	left: 5px!important;
+    	&>.vc_column-inner {
+			padding-left: 15px!important;
+			padding-right: 15px!important;
+		}
+
+		h3{margin-bottom: 36px!important;}
+
+		.vc_custom_1470922499637{padding-top: 55px !important;}
+
+		.mocad-button-container{
+			width: 100%;
+			padding-bottom: 61px;
+		}
+	}
+
+	.vc_custom_1472940178194.mission-support-container {
+	    padding-right: 15px !important;
+	    padding-left: 15px !important;
+	}
+}
+@include media(992px) {
+	html body .bt-title-bar-wrap .bt-title-bar h2{
+		font-size: 45px!important;
+	}
+	
+	.vc_column-inner  div.wpb_content_element:last-child,
+	.vc_btn3-container,
+	.attachment-file,
+	.vc_row .vc_separator {
+   		margin-bottom: 0!important;
+	}
+	
+	.attachment-file .attachment-icon {
+		margin-bottom:0;
+	}
+	
+	.vc_row .container {
+	    display: table!important;
+	    margin-bottom: 100px!important;
+	}
+	.vc_row .no-container {
+		margin-bottom: 100px!important;
+		overflow:hidden;
+	}
+	
+	.no-margin.vc_row .no-container {
+		margin-bottom: 0px!important;
+	}
+	
+	.home-page-cta-collage .container {
+		margin-bottom:75px!important;
+	}
+	
+	.mocad-mission{
+	    width: 75%!important;
+	  	right:0;
+	  	margin-top: -290px!important;
+	}
+
+	.mocad-support{
+		left: 10px!important;
+	}
+
+}
+@include media(1200px) {
+	.mocad-mission {
+	    width: 66.66666667%!important;
+	}
+
+	.mocad-support{
+		left: 5px!important;
+		top:-100px!important;
+
+		.vc_custom_1470922499637{padding-top: 52px !important;}
+
+		.mocad-button-container{
+			width: 50%;
+			padding-bottom: 59px;
+			&>.vc_column-inner {
+			    padding-left: 75px !important;
+			}
+			.mocad-button.member-home{
+				display: inline-block!important;
+			}
+
+			&+div{
+				vertical-align: top!important;
+				.wpb_wrapper p{margin-top: -10px!important;}
+			}
+		}
+
+		.vc_custom_1470922575935{
+			p{display: block!important;}
+		}
+	}
+}
+
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.carousel-inner .carousel-caption {
+	bottom: initial;
+	top: 25%;
+	text-shadow: none;
+}
+
+.carousel-caption p {
+  font-family: "ApexNew Book";
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  max-width: 525px;
+}
+
+.carousel-caption .exhibit{
+	font-family: "ApexNew Bold";
+}
+
+.carousel-indicators li{
+	-webkit-border-radius: 0!important;
+	-moz-border-radius: 0!important;
+	border-radius: 0!important;
+	background-color: #fff!important;
+	border: 0!important;
+	width: 6px!important;
+	height: 6px!important;
+	margin: 0 4px 0 0!important;
+	&:last-child{margin-right: 0;}
+	&.active{
+		background-color: #be0b06!important;
+		width: 6px!important;
+		height: 6px!important;
+		border: 0!important;
+	}
+}
+
+.carousel-control{
+	top: 73%;
+	right: 10%;
+	width: 42%;
+}
+
+.carousel-inner .img-responsive{
+	width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+	span{
+		bottom: 33px;
+	    top: initial;
+	    font-size: 28px;
+	}
+}
+
+.carousel-control.left span{
+	left: 160%;
+}
+
+.carousel-control.right span{
+	right: 160%;
+}
+
+.glyphicon:before {
+	font-family: fontawesome !important;
+	font-size: 28px!important;
+}
+
+.glyphicon-chevron-left:before {
+    content: "\f104"!important;
+}
+
+.glyphicon-chevron-right:before {
+    content: "\f105"!important;
+}
+
+@include media(320px){
+	#mocad-hompage-slider {
+	    margin-bottom: 20px;
+	}
+
+	.carousel-caption {
+	    top: 47%;
+	    width: 100%;
+	    left: 0;
+	}
+
+	.carousel-caption {
+		right: 0!important;
+    	left: inherit!important;
+    	display: table!important;
+	    bottom: 10%!important;
+	    top: inherit!important;
+		p {
+		    font-family: "ApexNew Book";
+		    font-size: 30px;
+		    line-height: 30px;
+		    text-transform: uppercase;
+		    max-width: 525px;
+		    margin-left: auto;
+    		margin-right: auto;
+		    margin-bottom: 15px;
+		    span{display: block;}
+		}
+	}
+
+	.vc_btn3-container.vc_btn3-inline{
+	    margin-right: 0!important;
+	}
+
+	.carousel-indicators{
+	    bottom: 0;
+	    width: 50% !important;
+        margin-left: -25% !important;
+	}
+}
+
+@include media(768px){
+	.carousel-caption {
+	    right: 7%!important;
+	    width: 35%;
+	    bottom: 15%!important;
+	}
+	
+	.global-nav .menu-content .bearsthemes-menu-style > ul > li a.view-all {
+		display:block;
+		float: left;
+    	width: auto;
+	}
+
+	.carousel-indicators{
+	  left: initial;
+	  right: 16%;
+	  width: 20%;
+	  left: 75%!important;
+	}
+
+	.vc_custom_1472940178194 {
+	    padding-top: 0 !important;
+	    padding-right: 40px !important;
+	    padding-bottom: 0px !important;
+	    padding-left: 24px !important;
+	}
+
+	.mocad-mission {
+	  margin-top: -162px;
+	}
+
+	.carousel-control{
+	  left: initial;
+	  top: 73%;
+	  right: 17%;
+	  width: 35%;
+	  z-index: 100;
+	}
+
+	#mocad-hompage-slider {
+	    margin-bottom: 30px;
+	}
+
+	.carousel-control.left, .carousel-control.right{
+		span{
+			bottom: 41px;
+		}
+	}
+
+	.carousel-control.left span{
+		left: 425%;
+	}
+
+	.carousel-control.right span{
+		right: 85%;
+	}
+}
+
+@include media(992px){
+
+	.carousel-caption {
+	    bottom: 25%!important;
+	}
+	.carousel-control.left span{
+		left: 448%;
+	}
+
+	.carousel-control.right span{
+		right: 107%;
+	}
+
+	/** CSS hack for IE9, IE10, IE11 
+	    Carrousel caption and arrow fix for homepage */
+	@media screen and (min-width:0\0) {
+	    .carousel-caption{
+	    	width: 36%!important;
+	    	left:58%!important;
+	    } 
+	    .slide.carousel .carousel-control.left, .slide.carousel .carousel-control.right{bottom: -200px;}
+	}
+}
+
+@include media(1200px){
+
+	.carousel-control.left span{
+		left: 457%;
+	}
+
+	.carousel-control.right span{
+		right: 117%;
+	}
+
+	.recent-supporters .frame.pull-top {
+	    margin-top: -189px;
+	}
+}
+
+@include media(1300px){
+	/** CSS hack for IE9, IE10, IE11 
+	    Carrousel caption and arrow fix for homepage */
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   		.slide.carousel .carousel-control.left, .slide.carousel .carousel-control.right{bottom: -420px;}
+	}
+
+
+}
+
+@include media(1440px){
+	.carousel-caption p {
+	    font-size: 45px;
+	    line-height: 45px;
+	}
+	.carousel-caption {
+	  top: 20%;
+	}
+	.mocad-mission {
+	    margin-top: -281px;
+	    right: 0;
+
+	}
+	.carousel-indicators {
+	    bottom: 15px;
+	}
+}
+
+.tb-products-grid.tpl1 .product .bt-thumb > a > img {
+	height: 250px !important;
+}
+.tb-products-grid.tpl1 .product .bt-thumb {
+	height: 250px;
+	overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+	.mocad-support .wpb_column .vc_column_container .vc_col-sm-6vc_column-inner  .wpb_wrapper .vc_row wpb_row .vc_inner .vc_row-fluid .wpb_column .vc_column_container .vc_col-sm-6 {
+		display: none !important;
+	}
+}

@@ -1,0 +1,42 @@
+body.error404 .page-404 {
+	.main-content {
+		padding-top: 40px;
+	}
+	.container {
+		text-align: center;
+		margin-bottom: 100px;
+
+		h1.title {
+			font-family: "ApexNew Bold";
+			font-size: 60px!important;
+		}
+
+		h3 {
+			font-family: "ApexNew Book";
+			font-size: 33px!important;
+		}
+
+		p {
+			margin-bottom: 50px;
+		}
+
+		.btn-danger {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@include media('768px') {
+	body.error404 {
+		.container {
+			.btn-danger {
+				margin:0 20px;
+				margin-bottom: 0;
+			}
+		}
+
+		.main-content {
+			padding-top: 90px;
+		}
+	}
+}

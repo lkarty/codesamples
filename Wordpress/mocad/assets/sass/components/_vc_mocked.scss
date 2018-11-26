@@ -1,0 +1,121 @@
+.vc_row{
+  .vc_separator{
+    margin: 35px 0 35px 0;
+  }
+  .justified{
+    width: 76%;
+  }
+  .vc-keep-site-block{
+    .wpb_single_image {
+      &.vc_align_right {
+        text-align: left;
+      }
+      &.vc_align_left {
+        text-align: right;
+      }
+    }
+  }
+
+
+  .container { /*center vertically elements with vc components*/
+    display: table;
+    margin-bottom: 100px;
+    
+  }
+
+  &.title-nospace{
+    .container {
+      margin-bottom: 60px;
+    }
+  }
+  @include media(768px){
+    .vc-keep-site-block {
+      .wpb_single_image {
+        &.vc_align_right {
+          text-align: right;
+        }
+        &.vc_align_left {
+          text-align: left;
+        }
+
+      }
+    }
+    
+    
+  }
+  @include media(1200px) {
+    .container {
+      .vc_column_container.vc_col-sm-6 {
+        display: table-cell;
+        vertical-align: middle; //required for center vertically the image with the text
+        float: none;
+      }
+    }
+  }
+}
+
+.page-template-mocad-contact-us{
+  .vc_row {
+    .container {
+      .vc_column_container.vc_col-sm-6 {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.three-column-donations.vc_row {
+	.vc_separator {
+		display:none;
+	}
+}
+
+.vc_row.wpb_row.CTA-Full-width-Background {
+margin-bottom:100px;
+}
+
+.center-text-divider-text-left-image-right .wpb_text_column.wpb_content_element {
+    margin-right: 80px;
+}
+
+.text-right-no-divider-image-left .wpb_text_column.wpb_content_element { 
+    margin-left: 80px;
+}
+
+.text-left-small-image-right-caption.vc_row {
+    .container {
+      .vc_column_container.vc_col-sm-6 {
+        vertical-align: top;
+          img {
+          	margin-top:-5px;
+          }
+      }
+    }
+}
+
+.press-archive .custom-pagination {
+	margin-bottom:0;
+}
+
+.wpb-js-composer .vc_row .container .image-container-responsive-swap{
+	display: table-header-group;
+}
+
+.wpb-js-composer .vc_row .container .text-container-responsive-swap{
+	display: table;
+}
+
+@include media(768px){
+	.wpb-js-composer .vc_row .container .image-container-responsive-swap,
+	.wpb-js-composer .vc_row .container .text-container-responsive-swap{
+		display: table-cell;
+	}
+}
+
+.vc_row ul {
+    padding-left: 17px;
+    margin-bottom: 15px;
+}
+.vc_row li {
+    list-style: initial;
+}

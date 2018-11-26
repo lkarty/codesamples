@@ -1,0 +1,206 @@
+/*
+* Contact Form
+************************************/
+
+.page-template-mocad-contact-us {
+	.social-media {
+ 	   margin-top: 85px !important;
+ 	}
+ 	.wpcf7-response-output {
+ 	   margin:0;
+ 	   width: 80%;
+ 	}
+
+  .contact-form-info-container.negative-margin{
+    margin-top: -78px!important;
+  }
+
+  .contact-display > .vc_column-inner {
+    padding-top: 132px!important;
+    padding-left: 55px!important;
+    .center-map {
+      margin-left: -40px;
+    }
+  }
+  
+  .contact-form-fields-container{
+    padding-bottom: 100px;
+  }
+
+  input.wpcf7-submit{
+    &:hover{
+      background-color: #FFFFFF!important;
+      color: #be0b06 !important;
+    }
+    &:focus{
+      background-color: transparent!important;
+      color: #FFFFFF !important;
+    }
+  }
+}
+
+@include media(768px) {
+  .page-template-mocad-contact-us {
+    .contact-display > .vc_column-inner {
+      .center-map {
+        margin-left: 0;
+        margin-top: 70px;
+      }
+    }
+
+    .contact-form-info-container.negative-margin{margin-top: -198px!important;}
+    .contact-display{vertical-align: bottom !important;}
+    .contact-form-fields-container{
+      background-color: #be0b06 !important;
+      padding-bottom: 0!important;
+    }
+    .contact-form-info-container{
+      .contact-form-fields-container > div{min-height: 980px;}
+      .contact-form-info-container-text{
+        width: 290px;
+        height: 309px;
+      }
+      .social-media{
+        width: 320px;
+        height: 95px;
+      }
+      .center-map{
+        height: 359px;
+        position: relative;
+        margin-bottom: 0!important;
+        iframe{
+          position: absolute;
+          bottom: 0;
+        }
+      }
+
+    }
+  }
+}
+
+@include media(1024px) {
+  .page-template-mocad-contact-us {
+    .center-map {
+      iframe {
+        margin-top: -25px;
+      }
+    }
+  }
+}
+
+@include media(1200px) {
+	.page-template-mocad-contact-us {
+ 		.wpcf7-response-output {
+ 	    width: 100%;
+ 		}
+ 	}
+ }
+
+.social-media .vc_icon_element.vc_icon_element-outer.vc_icon_element-align-left {
+  float: left;
+}
+
+html body .vc_row.wpb_row.vc_row-fluid.negative-margin {
+  margin-top: -198px;
+}
+
+html body .main-content .negative-margin .down{
+  margin-bottom: 10px;
+}
+
+html body input[type="text"], html body input[type="email"], html body input[type="search"], html body input[type="tel"], html body textarea, html body select{
+  background-color: #fff;
+  height: 60px;
+}
+
+html body .main-content .down h2{
+  font-family: "ApexNew Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.25rem!important;
+  color: #fff;
+}
+
+html body textarea.wpcf7-form-control.wpcf7-textarea {
+  min-height: 185px;
+}
+
+html body input[type="submit"],  html body input[type="submit"]:hover{
+  font-family: "ApexNew Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #FFFFFF;
+}
+
+span.wpcf7-not-valid-tip {
+  font-family: "ApexNew Book", Arial, sans-serif;
+  color: #fff!important;
+  text-transform: uppercase;
+  font-size: 12px; 
+}
+
+.required-text-reference {
+  font-family: "ApexNew Book", Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px!important;
+}
+
+html body input[type="text"], html body input[type="email"], html body select, html body textarea {
+  margin-bottom: 10px;
+}
+
+div.wpcf7-validation-errors {
+  font-family: "ApexNew Book", Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none!important;
+}
+
+
+
+.page-template-mocad-contact-us {
+  .modal {
+    z-index: 999999!important;
+  }
+  .modal-dialog {
+    width: 100%!important;
+    max-width: 370px!important;
+  }
+  .modal-content {
+    border-radius: 0!important;
+    padding: 40px 0!important;
+  }
+  .modal-header {
+    border: none!important;
+  }
+  .modal-title {
+    line-height: 1!important;
+    text-align: center!important;
+  }
+  .modal-body {
+    padding: 0!important;
+
+    p {
+      text-align: center!important;
+    }
+  }
+  .modal-footer {
+    border: none!important;
+    text-align: center!important;
+  }
+}
+
+@include media('768px'){
+  html body .main-content .down h2{
+    font-size: 3.25rem!important;
+  }
+}
+
+@include media(1200px){
+  html body .main-content .down h2{
+    font-size: 45px!important;
+  }
+}
